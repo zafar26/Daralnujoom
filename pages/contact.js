@@ -54,7 +54,7 @@ export default function Contact() {
       <NextSeo
         title="Contact Us | Get a Free Quote — Dar Al Nujoom Textiles & Tailoring"
         description="Contact Dar Al Nujoom for a free quote on school uniforms, restaurant uniforms, party wear, or bulk stitching orders. Call, WhatsApp, or fill our form."
-        canonical="https://www.daralnujoomtextiles.com/contact"
+        canonical="https://daralnujoom.vercel.app/contact"
       />
       <Layout>
         {/* Hero */}

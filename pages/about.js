@@ -24,7 +24,7 @@ export default function About() {
       <NextSeo
         title="About Us | Dar Al Nujoom Textiles & Tailoring — Est. 2014"
         description="Learn about Dar Al Nujoom — a decade of premium tailoring, uniform stitching, and custom garment services. Our story, our values, our mission."
-        canonical="https://www.daralnujoomtextiles.com/about"
+        canonical="https://daralnujoom.vercel.app/about"
       />
       <Layout>
         {/* Hero */}

@@ -32,7 +32,7 @@ export default function Gallery() {
       <NextSeo
         title="Gallery | Tailoring Portfolio — Dar Al Nujoom Textiles"
         description="Browse our tailoring portfolio — school uniforms, restaurant wear, party dresses, corporate attire, and more. See the quality of Dar Al Nujoom stitching."
-        canonical="https://www.daralnujoomtextiles.com/gallery"
+        canonical="https://daralnujoom.vercel.app/gallery"
       />
       <Layout>
         {/* Hero */}

@@ -82,7 +82,7 @@ export default function Home() {
       <NextSeo
         title="Dar Al Nujoom Textiles & Tailoring | School, Restaurant & Bulk Uniforms"
         description="Expert tailoring for school uniforms, restaurant uniforms, petrol pump uniforms, party wear & bulk orders. Premium stitching at competitive prices. Order now!"
-        canonical="https://www.daralnujoomtextiles.com"
+        canonical="https://daralnujoom.vercel.app"
       />
       <Layout>
         {/* ── HERO ────────────────────────────────────────── */}
