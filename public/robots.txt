@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.daralnujoomtextiles.com/sitemap.xml
+
+# Block API and private routes
+Disallow: /api/
