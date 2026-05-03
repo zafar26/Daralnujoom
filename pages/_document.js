@@ -52,6 +52,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <meta name="google-site-verification" content="googleb957e3bfe75f765e.html" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <script
