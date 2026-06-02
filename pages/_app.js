@@ -2,8 +2,18 @@ import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo';
 import SEO_CONFIG from '../next-seo.config';
 import { Analytics } from "@vercel/analytics/next"
+import {useEffect } from "react"
 
 export default function App({ Component, pageProps }) {
+  useEffect(()=>{
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(() => console.log('SW registered'))
+          .catch((err) => console.log('SW failed:', err));
+      });
+    }
+  }, [])
   return (
     <>
       <DefaultSeo {...SEO_CONFIG} />
@@ -30,6 +40,11 @@ export default function App({ Component, pageProps }) {
       <link rel="icon" sizes="192x192" href="/favicon-192.png" />
       {/* Icon */}
       {/* <link rel="icon" href="/dar_al_nujoom.svg" type="image/svg+xml" /> */}
+
+      {/* PWA */}
+      <link rel="manifest" href="/manifest.json" />
+      <meta name="theme-color" content="#c9a84c" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
       <div className="noise-overlay" aria-hidden="true" />
       <Component {...pageProps} />
