@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import {useEffect } from "react"
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -8,13 +9,13 @@ const structuredData = {
   description:
     'Premium tailoring and stitching services for uniforms, party wear, and bulk orders.',
   url: 'https://daralnujom.shop',
-  telephone: '+92-XXX-XXXXXXX',
+  telephone: '+971-544779138',
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Your Street Address',
-    addressLocality: 'Your City',
-    addressCountry: 'PK',
+    streetAddress: 'Buteena',
+    addressLocality: 'Sharjah',
+    addressCountry: 'UAE',
   },
   openingHoursSpecification: [
     {
@@ -25,8 +26,8 @@ const structuredData = {
     },
   ],
   sameAs: [
-    'https://www.instagram.com/daralnujoom',
-    'https://www.facebook.com/daralnujoom',
+    'https://www.instagram.com/daralnujom',
+    'https://www.facebook.com/daralnujom',
   ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -43,6 +44,15 @@ const structuredData = {
 };
 
 export default function Document() {
+  useEffect(()=>{
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(() => console.log('SW registered'))
+          .catch((err) => console.log('SW failed:', err));
+      });
+    }
+  }, [])
   return (
     <Html lang="en">
       <Head>
@@ -59,6 +69,33 @@ export default function Document() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+              {/* OG */}
+      <meta property="og:title" content="Dar Al Nujoom | Textiles & Tailoring" />
+      <meta property="og:description" content="Dar Al Nujoom – Premium textiles and tailoring services. Quality craftsmanship for every occasion." />
+      <meta property="og:image" content="/dar_al_nujoom_logo.png" />
+      <meta property="og:url" content="https://daralnujom.shop" />
+      <meta property="og:type" content="website" />
+
+      {/* Images & ICons */}
+      {/* <!-- Favicon ICO (all browsers) --> */}
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+      {/* <!-- PNG fallback --> */}
+      <link rel="icon" type="image/png" href="/favicon.png" />
+
+      {/* <!-- Apple devices --> */}
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+      {/* <!-- Android / PWA --> */}
+      <link rel="icon" sizes="192x192" href="/favicon-192.png" />
+      {/* Icon */}
+      {/* <link rel="icon" href="/dar_al_nujoom.svg" type="image/svg+xml" /> */}
+
+      {/* PWA */}
+      <link rel="manifest" href="/manifest.json" />
+      <meta name="theme-color" content="#c9a84c" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
       </Head>
       <body>
         <Main />
