@@ -23,7 +23,7 @@ export default function Contact() {
     const msg = encodeURIComponent(
       `Hello Dar Al Nujoom!\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nService: ${form.service}\n\nMessage:\n${form.message}`
     );
-    window.open(`https://wa.me/92XXXXXXXXXX?text=${msg}`, '_blank');
+    window.open(`https://wa.me/971544779138?text=${msg}`, '_blank');
     setSubmitted(true);
   };
 
