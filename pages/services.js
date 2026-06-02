@@ -66,11 +66,11 @@ export default function Services() {
       <NextSeo
         title="Our Services | School Uniforms, Restaurant & Bulk Tailoring — Dar Al Nujoom"
         description="Complete tailoring services: school uniforms, restaurant staff wear, petrol pump uniforms, hotel uniforms, party wear & bulk stitching orders. Get a free quote today."
-        canonical="https://daralnujoom.vercel.app/services"
+        canonical="https://daralnujom.shop/services"
         openGraph={{
           title: 'Tailoring Services | Dar Al Nujoom Textiles',
           description: 'Expert stitching for all uniform types and party wear. Bulk orders from 50 to 10,000 pieces.',
-          url: 'https://daralnujoom.vercel.app/services',
+          url: 'https://daralnujom.shop/services',
         }}
       />
       <Layout>

@@ -4,10 +4,10 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Dar Al Nujoom Textiles & Tailoring',
-  image: 'https://daralnujoom.vercel.app/og-image.jpg',
+  image: 'https://daralnujom.shop/og-image.jpg',
   description:
     'Premium tailoring and stitching services for uniforms, party wear, and bulk orders.',
-  url: 'https://daralnujoom.vercel.app',
+  url: 'https://daralnujom.shop',
   telephone: '+92-XXX-XXXXXXX',
   priceRange: '$$',
   address: {

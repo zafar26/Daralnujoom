@@ -11,20 +11,21 @@ const TEAM_VALUES = [
 ];
 
 const MILESTONES = [
-  { year: '2014', event: 'Dar Al Nujoom founded with a single sewing machine and a big dream.' },
-  { year: '2016', event: 'First major bulk contract — 500 school uniforms for a local academy.' },
-  { year: '2018', event: 'Expanded production to restaurant and corporate uniform stitching.' },
+  { year: '2000', event: 'Dar Al Nujoom (Former Name: Good Will) founded with a single sewing machine and a big dream in Karimnagar, India.' },
+  { year: '2010', event: 'First major bulk contract — 500 school uniforms for a local academy.' },
+  { year: '2016', event: 'Expanded production to restaurant and Petrol Pumps Suits, corporate uniform stitching.' },
   { year: '2021', event: 'Reached 2,000+ satisfied clients across the region.' },
   { year: '2024', event: 'Scaled to 10,000+ uniform capacity per month. Multiple industry awards.' },
+  { year: '2026', event: 'Started Business in Sharjah UAE with a big Dream.' },
 ];
 
 export default function About() {
   return (
     <>
       <NextSeo
-        title="About Us | Dar Al Nujoom Textiles & Tailoring — Est. 2014"
+        title="About Us | Dar Al Nujoom Textiles & Tailoring — Est. 2000"
         description="Learn about Dar Al Nujoom — a decade of premium tailoring, uniform stitching, and custom garment services. Our story, our values, our mission."
-        canonical="https://daralnujoom.vercel.app/about"
+        canonical="https://daralnujom.shop/about"
       />
       <Layout>
         {/* Hero */}
@@ -94,7 +95,7 @@ export default function About() {
                       color: 'var(--text-muted)',
                       fontStyle: 'italic',
                     }}>
-                      "House of Stars" — Stitching Excellence Since 2014
+                      "House of Stars" — Stitching Excellence Since 2000
                     </div>
                     <div style={{
                       marginTop: '40px',
@@ -102,7 +103,7 @@ export default function About() {
                       gridTemplateColumns: '1fr 1fr',
                       gap: '20px',
                     }}>
-                      {[['10+', 'Years'], ['5000+', 'Uniforms'], ['200+', 'Clients'], ['6', 'Categories']].map(([num, label]) => (
+                      {[['20+', 'Years'], ['5000+', 'Uniforms'], ['200+', 'Clients'], ['6', 'Categories']].map(([num, label]) => (
                         <div key={label} style={{ textAlign: 'center' }}>
                           <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '36px', color: 'var(--gold)', fontWeight: 700 }}>{num}</div>
                           <div style={{ fontSize: '11px', letterSpacing: '2px', color: 'var(--text-muted)', textTransform: 'uppercase' }}>{label}</div>

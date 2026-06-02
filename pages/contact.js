@@ -54,7 +54,7 @@ export default function Contact() {
       <NextSeo
         title="Contact Us | Get a Free Quote — Dar Al Nujoom Textiles & Tailoring"
         description="Contact Dar Al Nujoom for a free quote on school uniforms, restaurant uniforms, party wear, or bulk stitching orders. Call, WhatsApp, or fill our form."
-        canonical="https://daralnujoom.vercel.app/contact"
+        canonical="https://daralnujom.shop/contact"
       />
       <Layout>
         {/* Hero */}
@@ -115,8 +115,8 @@ export default function Contact() {
                 </h2>
 
                 {[
-                  { icon: '📍', title: 'Location', lines: ['Shop Address', 'City, Pakistan'] },
-                  { icon: '📞', title: 'Phone / WhatsApp', lines: ['+92-XXX-XXXXXXX', 'Available 9AM – 9PM'] },
+                  { icon: '📍', title: 'Location', lines: ['Shop #2, Behind Al Madina Supermarket, Buteena, Sharjah', 'Sharjah, UAE'] },
+                  { icon: '📞', title: 'Phone / WhatsApp', lines: ['+971-544779138, +971-556855434', 'Available 9AM – 9PM'] },
                   { icon: '✉️', title: 'Email', lines: ['info@daralnujoom.com', 'orders@daralnujoom.com'] },
                   { icon: '⏰', title: 'Working Hours', lines: ['Mon – Sat: 9AM – 9PM', 'Sunday: 10AM – 6PM'] },
                 ].map((info) => (
@@ -148,7 +148,17 @@ export default function Contact() {
                         {info.title}
                       </div>
                       {info.lines.map((line) => (
-                        <div key={line} style={{ color: 'var(--cream)', fontSize: '15px', lineHeight: 1.6 }}>{line}</div>
+                        <div key={line} style={{ color: 'var(--cream)', fontSize: '15px', lineHeight: 1.6 }}>{
+                          
+                          line.startsWith('+971') ? (
+                            <>
+                              <a href="tel:+971-544779138" style={{ color: 'inherit', textDecoration: 'none' }}>+971-544779138 </a>
+                              
+                              <a href="tel:+971-556855434" style={{ color: 'inherit', textDecoration: 'none' }}> +971-556855434</a>
+                            
+                            </>
+                          ) : line
+                          }</div>
                       ))}
                     </div>
                   </div>
@@ -156,7 +166,7 @@ export default function Contact() {
 
                 {/* WhatsApp CTA */}
                 <a
-                  href="https://wa.me/92XXXXXXXXXX"
+                  href="https://wa.me/971544779138"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -239,7 +249,7 @@ export default function Contact() {
                             required
                             value={form.phone}
                             onChange={handleChange}
-                            placeholder="+92-XXX-XXXXXXX"
+                            placeholder="+971-XXX-XXXXXXX"
                             style={inputStyle}
                           />
                         </div>

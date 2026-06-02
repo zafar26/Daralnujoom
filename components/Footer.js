@@ -148,8 +148,8 @@ export default function Footer() {
               Get In Touch
             </div>
             {[
-              { icon: '📍', text: 'Your Shop Address, City' },
-              { icon: '📞', text: '+92-XXX-XXXXXXX' },
+              { icon: '📍', text: 'Shop #2, Behind Al Madina Supermarket, Butena, Sharjah' },
+              { icon: '📞', text: '+971-544779138, +971-556855434' },
               { icon: '✉️', text: 'info@daralnujoom.com' },
               { icon: '⏰', text: 'Mon–Sat: 9AM – 9PM' },
             ].map(({ icon, text }) => (
@@ -160,11 +160,22 @@ export default function Footer() {
                 marginBottom: '14px',
               }}>
                 <span style={{ fontSize: '14px', marginTop: '1px' }}>{icon}</span>
-                <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>
+               {icon == '📞' ? (
+                    <>
+                      <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>
+                        <a href="tel:+971-544779138" style={{ color: 'inherit', textDecoration: 'none' }}>+971-544779138</a>
+                      </span>
+                      <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>
+                        <a href="tel:+971-556855434" style={{ color: 'inherit', textDecoration: 'none' }}>+971-556855434</a>
+                      </span>
+                    </>
+                  ) : (
+                    <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>
+                  )}
               </div>
             ))}
             <a
-              href="https://wa.me/92XXXXXXXXXX"
+              href="https://wa.me/+971544779138"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
