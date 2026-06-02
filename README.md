@@ -1,6 +1,6 @@
-# 🌟 Dar Al Nujoom — Textiles & Tailoring Website
+# 🌟 Dar Al Nujom — Textiles & Tailoring Website
 
-Premium Next.js website for Dar Al Nujoom tailoring business with full SEO optimization and Framer Motion animations.
+Premium Next.js website for Dar Al Nujom tailoring business with full SEO optimization and Framer Motion animations.
 
 ---
 
@@ -55,13 +55,13 @@ dar-al-nujoom/
 
 ### 1. Update contact details in:
 - `components/Footer.js` → Phone, address, email
-- `pages/contact.js` → WhatsApp number (`wa.me/92XXXXXXXXXX`)
+- `pages/contact.js` → WhatsApp number (`wa.me/971544779138`)
 - `components/Layout.js` → WhatsApp float button number
 - `pages/index.js` → WhatsApp CTA button
 - `pages/_document.js` → Structured data (address, phone)
 
 ### 2. Update your domain in:
-- `next-seo.config.js` → Replace `daralnujoomtextiles.com`
+- `next-seo.config.js` → Replace `daralnujom.shop`
 - `public/sitemap.xml` → Replace domain
 - `public/robots.txt` → Replace domain
 
@@ -132,6 +132,6 @@ npm run export
 
 ## 📞 Support
 
-Built for Dar Al Nujoom Textiles & Tailoring  
+Built for Dar Al Nujom Textiles & Tailoring  
 Update your WhatsApp number before launching!
-# Daralnujoom
+# Daralnujom

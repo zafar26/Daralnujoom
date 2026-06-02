@@ -78,7 +78,7 @@ export default function Navbar() {
                   lineHeight: 1,
                   letterSpacing: '1px',
                 }}>
-                  Dar Al Nujoom
+                  Dar Al Nujom
                 </div>
                 <div style={{
                   fontFamily: 'Montserrat, sans-serif',

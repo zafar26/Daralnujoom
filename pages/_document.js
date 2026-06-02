@@ -2,9 +2,9 @@ import { Html, Head, Main, NextScript } from 'next/document';
 import {useEffect } from "react"
 
 const structuredData = {
-  '@context': 'https://schema.org',
+  '@context': 'https://daralnujom.shop',
   '@type': 'LocalBusiness',
-  name: 'Dar Al Nujoom Textiles & Tailoring',
+  name: 'Dar Al Nujom Textiles & Tailoring',
   image: 'https://daralnujom.shop/og-image.jpg',
   description:
     'Premium tailoring and stitching services for uniforms, party wear, and bulk orders.',
@@ -70,8 +70,8 @@ export default function Document() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
               {/* OG */}
-      <meta property="og:title" content="Dar Al Nujoom | Textiles & Tailoring" />
-      <meta property="og:description" content="Dar Al Nujoom – Premium textiles and tailoring services. Quality craftsmanship for every occasion." />
+      <meta property="og:title" content="Dar Al Nujom | Textiles & Tailoring" />
+      <meta property="og:description" content="Dar Al Nujom – Premium textiles and tailoring services. Quality craftsmanship for every occasion." />
       <meta property="og:image" content="/dar_al_nujoom_logo.png" />
       <meta property="og:url" content="https://daralnujom.shop" />
       <meta property="og:type" content="website" />

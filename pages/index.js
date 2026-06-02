@@ -71,7 +71,7 @@ const STATS = [
 
 const TESTIMONIALS = [
   { name: 'Ahmed Raza', role: 'School Principal', text: 'Outstanding quality! All 500 school uniforms were delivered on time and perfectly stitched. Our students look impeccable.', stars: 5 },
-  { name: 'Sana Khan', role: 'Restaurant Owner', text: 'Dar Al Nujoom transformed our staff presentation. The uniforms are comfortable, durable, and exactly our brand colors.', stars: 5 },
+  { name: 'Sana Khan', role: 'Restaurant Owner', text: 'Dar Al Nujom transformed our staff presentation. The uniforms are comfortable, durable, and exactly our brand colors.', stars: 5 },
   { name: 'Tariq Mehmood', role: 'Petrol Station Manager', text: 'Excellent bulk pricing and super professional team. Repeat customer for 3 years and counting!', stars: 5 },
 ];
 
@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Dar Al Nujoom Textiles & Tailoring | School, Restaurant & Bulk Uniforms"
+        title="Dar Al Nujom Textiles & Tailoring | School, Restaurant & Bulk Uniforms"
         description="Expert tailoring for school uniforms, restaurant uniforms, petrol pump uniforms, party wear & bulk orders. Premium stitching at competitive prices. Order now!"
         canonical="https://daralnujom.shop"
       />
@@ -627,7 +627,7 @@ export default function Home() {
                 }}>
                   Get Free Quote
                 </Link>
-                <a href="https://wa.me/92XXXXXXXXXX" target="_blank" rel="noopener noreferrer" style={{
+                <a href="https://wa.me/971544779138" target="_blank" rel="noopener noreferrer" style={{
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '10px',

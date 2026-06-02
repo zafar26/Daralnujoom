@@ -17,7 +17,7 @@ export default function Layout({ children }) {
 
       {/* WhatsApp Float Button */}
       <motion.a
-        href="https://wa.me/971544779138?text=Hello%20Dar%20Al%20Nujoom%2C%20I%20need%20tailoring%20services"
+        href="https://wa.me/971544779138?text=Hello%20Dar%20Al%20Nujom%2C%20I%20need%20tailoring%20services"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"

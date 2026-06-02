@@ -11,7 +11,7 @@ const TEAM_VALUES = [
 ];
 
 const MILESTONES = [
-  { year: '2000', event: 'Dar Al Nujoom (Former Name: Good Will) founded with a single sewing machine and a big dream in Karimnagar, India.' },
+  { year: '2000', event: 'Dar Al Nujom (Former Name: Good Will) founded with a single sewing machine and a big dream in Karimnagar, India.' },
   { year: '2010', event: 'First major bulk contract — 500 school uniforms for a local academy.' },
   { year: '2016', event: 'Expanded production to restaurant and Petrol Pumps Suits, corporate uniform stitching.' },
   { year: '2021', event: 'Reached 2,000+ satisfied clients across the region.' },
@@ -23,8 +23,8 @@ export default function About() {
   return (
     <>
       <NextSeo
-        title="About Us | Dar Al Nujoom Textiles & Tailoring — Est. 2000"
-        description="Learn about Dar Al Nujoom — a decade of premium tailoring, uniform stitching, and custom garment services. Our story, our values, our mission."
+        title="About Us | Dar Al Nujom Textiles & Tailoring — Est. 2000"
+        description="Learn about Dar Al Nujom — a decade of premium tailoring, uniform stitching, and custom garment services. Our story, our values, our mission."
         canonical="https://daralnujom.shop/about"
       />
       <Layout>
@@ -47,7 +47,7 @@ export default function About() {
                 fontWeight: 600,
                 marginBottom: '20px',
               }}>
-                About <span style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Dar Al Nujoom</span>
+                About <span style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Dar Al Nujom</span>
               </h1>
               <div className="gold-line" />
               <p style={{ color: 'var(--text-muted)', fontSize: '17px', maxWidth: '580px', margin: '20px auto 0', lineHeight: 1.8 }}>
@@ -128,7 +128,7 @@ export default function About() {
                 </h2>
                 <div className="gold-line" style={{ margin: '16px 0 28px' }} />
                 <p style={{ color: 'var(--text-muted)', fontSize: '15px', lineHeight: 1.9, marginBottom: '20px' }}>
-                  Dar Al Nujoom was born from a simple belief — that quality tailoring should be accessible to everyone, from individual customers seeking the perfect party outfit to large institutions needing thousands of uniforms.
+                  Dar Al Nujom was born from a simple belief — that quality tailoring should be accessible to everyone, from individual customers seeking the perfect party outfit to large institutions needing thousands of uniforms.
                 </p>
                 <p style={{ color: 'var(--text-muted)', fontSize: '15px', lineHeight: 1.9, marginBottom: '32px' }}>
                   Over a decade later, we've grown into a trusted tailoring partner for schools, restaurants, hotels, and corporations across the region — never compromising on the precision and care we put into every single stitch.
@@ -263,7 +263,7 @@ export default function About() {
               Be Part of Our Story
             </h2>
             <p style={{ color: 'var(--navy)', opacity: 0.7, fontSize: '16px', marginBottom: '36px' }}>
-              Join 200+ satisfied clients who trust Dar Al Nujoom for all their tailoring needs.
+              Join 200+ satisfied clients who trust Dar Al Nujom for all their tailoring needs.
             </p>
             <Link href="/contact" style={{
               display: 'inline-block',

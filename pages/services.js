@@ -64,11 +64,11 @@ export default function Services() {
   return (
     <>
       <NextSeo
-        title="Our Services | School Uniforms, Restaurant & Bulk Tailoring — Dar Al Nujoom"
+        title="Our Services | School Uniforms, Restaurant & Bulk Tailoring — Dar Al Nujom"
         description="Complete tailoring services: school uniforms, restaurant staff wear, petrol pump uniforms, hotel uniforms, party wear & bulk stitching orders. Get a free quote today."
         canonical="https://daralnujom.shop/services"
         openGraph={{
-          title: 'Tailoring Services | Dar Al Nujoom Textiles',
+          title: 'Tailoring Services | Dar Al Nujom Textiles',
           description: 'Expert stitching for all uniform types and party wear. Bulk orders from 50 to 10,000 pieces.',
           url: 'https://daralnujom.shop/services',
         }}

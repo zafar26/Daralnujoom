@@ -30,8 +30,8 @@ export default function Gallery() {
   return (
     <>
       <NextSeo
-        title="Gallery | Tailoring Portfolio — Dar Al Nujoom Textiles"
-        description="Browse our tailoring portfolio — school uniforms, restaurant wear, party dresses, corporate attire, and more. See the quality of Dar Al Nujoom stitching."
+        title="Gallery | Tailoring Portfolio — Dar Al Nujom Textiles"
+        description="Browse our tailoring portfolio — school uniforms, restaurant wear, party dresses, corporate attire, and more. See the quality of Dar Al Nujom stitching."
         canonical="https://daralnujom.shop/gallery"
       />
       <Layout>
@@ -209,7 +209,7 @@ export default function Gallery() {
               Want Work Like This?
             </h2>
             <p style={{ color: 'var(--navy)', opacity: 0.7, fontSize: '16px', marginBottom: '36px' }}>
-              Place your order today and see why 200+ clients trust Dar Al Nujoom.
+              Place your order today and see why 200+ clients trust Dar Al Nujom.
             </p>
             <a href="/contact" style={{
               display: 'inline-block',

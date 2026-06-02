@@ -21,7 +21,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const msg = encodeURIComponent(
-      `Hello Dar Al Nujoom!\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nService: ${form.service}\n\nMessage:\n${form.message}`
+      `Hello Dar Al Nujom!\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nService: ${form.service}\n\nMessage:\n${form.message}`
     );
     window.open(`https://wa.me/971544779138?text=${msg}`, '_blank');
     setSubmitted(true);
@@ -52,8 +52,8 @@ export default function Contact() {
   return (
     <>
       <NextSeo
-        title="Contact Us | Get a Free Quote — Dar Al Nujoom Textiles & Tailoring"
-        description="Contact Dar Al Nujoom for a free quote on school uniforms, restaurant uniforms, party wear, or bulk stitching orders. Call, WhatsApp, or fill our form."
+        title="Contact Us | Get a Free Quote — Dar Al Nujom Textiles & Tailoring"
+        description="Contact Dar Al Nujom for a free quote on school uniforms, restaurant uniforms, party wear, or bulk stitching orders. Call, WhatsApp, or fill our form."
         canonical="https://daralnujom.shop/contact"
       />
       <Layout>
@@ -117,7 +117,7 @@ export default function Contact() {
                 {[
                   { icon: '📍', title: 'Location', lines: ['Shop #2, Behind Al Madina Supermarket, Buteena, Sharjah', 'Sharjah, UAE'] },
                   { icon: '📞', title: 'Phone / WhatsApp', lines: ['+971-544779138, +971-556855434', 'Available 9AM – 9PM'] },
-                  { icon: '✉️', title: 'Email', lines: ['info@daralnujoom.com', 'orders@daralnujoom.com'] },
+                  { icon: '✉️', title: 'Email', lines: ['info@daralnujom.shop'] },
                   { icon: '⏰', title: 'Working Hours', lines: ['Mon – Sat: 9AM – 9PM', 'Sunday: 10AM – 6PM'] },
                 ].map((info) => (
                   <div key={info.title} style={{
@@ -157,7 +157,13 @@ export default function Contact() {
                               <a href="tel:+971-556855434" style={{ color: 'inherit', textDecoration: 'none' }}> +971-556855434</a>
                             
                             </>
-                          ) : line
+                          ) : 
+                          
+                          info.title == 'Email' ? 
+                            <>
+                              <a href="mailto:info@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> info@daralnujom.shop </a>
+                            </>
+                            : line
                           }</div>
                       ))}
                     </div>

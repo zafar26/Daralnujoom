@@ -27,7 +27,7 @@ export default function Footer() {
               color: 'var(--cream)',
               marginBottom: '6px',
             }}>
-              Dar Al Nujoom
+              Dar Al Nujom
             </div>
             <div style={{
               fontFamily: 'Montserrat, sans-serif',
@@ -150,7 +150,7 @@ export default function Footer() {
             {[
               { icon: '📍', text: 'Shop #2, Behind Al Madina Supermarket, Butena, Sharjah' },
               { icon: '📞', text: '+971-544779138, +971-556855434' },
-              { icon: '✉️', text: 'info@daralnujoom.com' },
+              { icon: '✉️', text: 'info@daralnujom.shop' },
               { icon: '⏰', text: 'Mon–Sat: 9AM – 9PM' },
             ].map(({ icon, text }) => (
               <div key={text} style={{
@@ -170,7 +170,13 @@ export default function Footer() {
                       </span>
                     </>
                   ) : (
-                    <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>
+                    icon == '✉️'?
+                    <>
+                      <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>
+                        <a href="mailto:info@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> info@daralnujom.shop</a>
+                      </span>  
+                    </>
+                    : (<span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>)
                   )}
               </div>
             ))}
@@ -203,7 +209,7 @@ export default function Footer() {
           gap: '12px',
         }}>
           <p style={{ color: 'var(--text-muted)', fontSize: '12px' }}>
-            © {year} Dar Al Nujoom Textiles & Tailoring. All Rights Reserved.
+            © {year} Dar Al Nujom Textiles & Tailoring. All Rights Reserved.
           </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '12px', fontFamily: 'Amiri, serif', direction: 'rtl' }}>
             دار النجوم للنسيج والخياطة ✦
