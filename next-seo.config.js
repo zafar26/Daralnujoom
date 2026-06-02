@@ -29,7 +29,7 @@ const SEO_CONFIG = {
     {
       name: 'keywords',
       content:
-        'uae, sharjah, tailoring, stitching, uniforms, school uniforms, restaurant uniforms, petrol pump uniforms, bulk uniform stitching, party wear stitching, custom clothing, Dar Al Nujom, textiles, uniform manufacturer', 'school uniforms in sharjah', 'tailoring in sharjah', 'best tailor',
+        'uae, sharjah, tailoring, stitching, uniforms, school uniforms, restaurant uniforms, petrol pump uniforms, bulk uniform stitching, party wear stitching, custom clothing, Dar Al Nujom, textiles, uniform manufacturer, school uniforms in sharjah, tailoring in sharjah, best tailor',
     },
     {
       name: 'author',
