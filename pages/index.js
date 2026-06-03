@@ -54,12 +54,12 @@ function Counter({ target, suffix = '' }) {
 
 // ── Services data ──────────────────────────────────────────
 const SERVICES = [
-  { icon: '🏫', title: 'School Uniforms', desc: 'Crisp, durable uniforms tailored for every school. Bulk orders with consistent quality.' },
-  { icon: '🍽️', title: 'Restaurant Uniforms', desc: 'Professional chef coats, waiter uniforms & aprons that make your brand shine.' },
-  { icon: '⛽', title: 'Petrol Pump Uniforms', desc: 'Comfortable, branded uniforms for fuel station staff. Weather-ready fabrics.' },
-  { icon: '🏨', title: 'Hotel & Corporate', desc: 'Smart corporate wear, hotel staff uniforms, security & housekeeping outfits.' },
-  { icon: '👗', title: 'Party Wear', desc: 'Exquisite stitching for weddings, events & celebrations. Your dream outfit, stitched perfectly.' },
-  { icon: '📦', title: 'Bulk Orders', desc: 'From 10 to 10,000 pieces — we deliver on time without compromising quality.' },
+  { icon: '🏫', title: 'School Uniforms', desc: 'Crisp, durable uniforms tailored for every school. Bulk orders with consistent quality.',url:"/school-uniforms-uae" },
+  { icon: '🍽️', title: 'Restaurant Uniforms', desc: 'Professional chef coats, waiter uniforms & aprons that make your brand shine.',url:"/uniforms-uae" },
+  { icon: '⛽', title: 'Petrol Pump Uniforms', desc: 'Comfortable, branded uniforms for fuel station staff. Weather-ready fabrics.',url:"/uniforms-uae" },
+  { icon: '🏨', title: 'Hotel & Corporate', desc: 'Smart corporate wear, hotel staff uniforms, security & housekeeping outfits.',url:"/uniforms-uae" },
+  { icon: '👗', title: 'Party Wear', desc: 'Exquisite stitching for weddings, events & celebrations. Your dream outfit, stitched perfectly.',url:"/uniforms-uae" },
+  { icon: '📦', title: 'Bulk Orders', desc: 'From 10 to 10,000 pieces — we deliver on time without compromising quality.',url:"/services" },
 ];
 
 const STATS = [
@@ -370,7 +370,7 @@ export default function Home() {
                     textTransform: 'uppercase',
                     fontWeight: 600,
                   }}>
-                    <Link href="/services" style={{ color: 'var(--gold)', textDecoration: 'none' }}>
+                    <Link href={svc.url} style={{ color: 'var(--gold)', textDecoration: 'none' }}>
                       Learn More →
                     </Link>
                   </div>
