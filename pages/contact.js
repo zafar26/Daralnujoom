@@ -162,6 +162,7 @@ export default function Contact() {
                           info.title == 'Email' ? 
                             <>
                               <a href="mailto:info@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> info@daralnujom.shop </a>
+                              <a href="mailto:abdul.aslam@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> abdul.aslam@daralnujom.shop </a>
                             </>
                             : line
                           }</div>

@@ -174,6 +174,8 @@ export default function Footer() {
                     <>
                       <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>
                         <a href="mailto:info@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> info@daralnujom.shop</a>
+                        
+                        <a href="mailto:abdul.aslam@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> abdul.aslam@daralnujom.shop</a>
                       </span>  
                     </>
                     : (<span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>)
