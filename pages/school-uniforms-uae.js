@@ -38,7 +38,7 @@ export default function SchoolUniformUAE() {
             inset: 0,
             background: 'radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 70%)',
           }} />
-            <div>
+            <div className="container">
                 <h1>School Uniforms in UAE</h1>
 
                 {/* Grid */}
