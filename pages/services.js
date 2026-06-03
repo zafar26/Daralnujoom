@@ -8,6 +8,7 @@ const SERVICES_DETAILED = [
     id: 'school-uniforms',
     icon: '🏫',
     title: 'School Uniforms',
+    url: "/school-uniforms-uae",
     subtitle: 'For Every Academy & Institution',
     desc: 'We specialize in bulk school uniform stitching across all styles — from traditional shalwar kameez to trousers, shirts, and blazers. Consistent sizing, durable fabric, and school color accuracy guaranteed.',
     features: ['Custom school logo embroidery', 'All sizes — junior to senior', 'Durable, easy-wash fabric', 'Minimum 50 pieces', 'Color-matched accuracy'],
@@ -17,6 +18,7 @@ const SERVICES_DETAILED = [
     id: 'restaurant-uniforms',
     icon: '🍽️',
     title: 'Restaurant Uniforms',
+    url: "/uniforms-uae",
     subtitle: 'Chef Coats, Aprons & Waiter Wear',
     desc: 'Elevate your dining brand with professional uniforms. From chef whites to elegant waiter attire — we stitch uniforms that are both stylish and functional in the kitchen and front-of-house.',
     features: ['Chef coats & pants', 'Aprons & bandanas', 'Waiter & hostess outfits', 'Heat-resistant fabrics', 'Quick turnaround'],
@@ -26,6 +28,7 @@ const SERVICES_DETAILED = [
     id: 'petrol-pump-uniforms',
     icon: '⛽',
     title: 'Petrol Pump Uniforms',
+    url: "/uniforms-uae",
     subtitle: 'Fuel Station Staff Wear',
     desc: 'Keep your fuel station staff looking professional and safe. We create durable, branded uniforms with reflective strips and company colors for maximum visibility and brand identity.',
     features: ['Reflective safety strips', 'Brand color matching', 'Weather-resistant fabric', 'Company logo printing', 'Bulk pricing available'],
@@ -35,6 +38,7 @@ const SERVICES_DETAILED = [
     id: 'hotel-corporate',
     icon: '🏨',
     title: 'Hotel & Corporate Uniforms',
+    url: "/uniforms-uae",
     subtitle: 'Housekeeping, Security & Reception',
     desc: 'From front desk reception to housekeeping and security — we provide complete uniform solutions for hotels, offices, and corporate setups that project professionalism and brand image.',
     features: ['Reception & front desk', 'Housekeeping uniforms', 'Security guard wear', 'Custom ID badge holders', 'Seasonal collections'],
@@ -44,6 +48,7 @@ const SERVICES_DETAILED = [
     id: 'party-wear',
     icon: '👗',
     title: 'Party & Event Wear',
+    url: "/uniforms-uae",
     subtitle: 'Weddings, Celebrations & Events',
     desc: 'Your special occasion deserves perfect stitching. Bring us your fabric and design — we craft exquisite party wear, formal dresses, sherwanis, and lehengas to your exact measurements.',
     features: ['Custom design execution', 'Premium hand-finish', 'Exact body measurements', 'All fabrics accepted', 'Bridal & groom wear'],
@@ -53,6 +58,7 @@ const SERVICES_DETAILED = [
     id: 'bulk-orders',
     icon: '📦',
     title: 'Bulk Order Specialist',
+    url: "/uniforms-uae",
     subtitle: '50 to 10,000+ Pieces',
     desc: 'We are built for volume. Whether you need 50 uniforms or 10,000 — our production setup ensures consistent quality across every single piece, delivered on your timeline.',
     features: ['Volume discounts available', 'Dedicated account manager', 'Quality control per batch', 'Flexible payment plans', 'Express delivery options'],
@@ -181,15 +187,17 @@ export default function Services() {
                     <div style={{ fontSize: '11px', letterSpacing: '3px', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '10px', fontWeight: 600 }}>
                       {svc.subtitle}
                     </div>
-                    <h2 style={{
-                      fontFamily: 'Cormorant Garamond, serif',
-                      fontSize: 'clamp(28px, 3vw, 40px)',
-                      color: 'var(--cream)',
-                      fontWeight: 600,
-                      marginBottom: '20px',
-                    }}>
-                      {svc.title}
-                    </h2>
+                    <Link href={svc.url} >
+                      <h2 style={{
+                        fontFamily: 'Cormorant Garamond, serif',
+                        fontSize: 'clamp(28px, 3vw, 40px)',
+                        color: 'var(--cream)',
+                        fontWeight: 600,
+                        marginBottom: '20px',
+                      }}>
+                        {svc.title}
+                      </h2>
+                    </Link>
                     <p style={{ color: 'var(--text-muted)', fontSize: '15px', lineHeight: 1.8, marginBottom: '28px' }}>
                       {svc.desc}
                     </p>
