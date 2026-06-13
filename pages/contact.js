@@ -116,7 +116,8 @@ export default function Contact() {
 
                 {[
                   { icon: '📍', title: 'Location', lines: ['Shop #2, Behind Al Madina Supermarket, Buteena, Sharjah', 'Sharjah, UAE'] },
-                  { icon: '📞', title: 'Phone / WhatsApp', lines: ['+971-544779138, +971-556855434', 'Available 9AM – 9PM'] },
+                  { 'icon': '☎️', title: 'Telephone', 'lines' : ['+971-66780474']},
+                  { icon: '📞', title: 'Mobile / WhatsApp', lines: ['+971-544779138, +971-556855434', 'Available 9AM – 9PM'] },
                   { icon: '✉️', title: 'Email', lines: ['info@daralnujom.shop'] },
                   { icon: '⏰', title: 'Working Hours', lines: ['Mon – Sat: 9AM – 9PM', 'Sunday: 10AM – 6PM'] },
                 ].map((info) => (
@@ -150,7 +151,7 @@ export default function Contact() {
                       {info.lines.map((line) => (
                         <div key={line} style={{ color: 'var(--cream)', fontSize: '15px', lineHeight: 1.6 }}>{
                           
-                          line.startsWith('+971') ? (
+                          line.startsWith('+971') && info.icon == '📞' ? (
                             <>
                               <a href="tel:+971-544779138" style={{ color: 'inherit', textDecoration: 'none' }}>+971-544779138 </a>
                               
@@ -158,7 +159,13 @@ export default function Contact() {
                             
                             </>
                           ) : 
-                          
+
+                          line.startsWith('+971') && info.icon == '☎️' ? (
+                            <>
+                              <a href="tel:+971-66780474" style={{ color: 'inherit', textDecoration: 'none' }}> +971-66780474</a>
+                            
+                            </>)
+                            :
                           info.title == 'Email' ? 
                             <>
                               <a href="mailto:info@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> info@daralnujom.shop </a>

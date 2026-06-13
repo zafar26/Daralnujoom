@@ -184,7 +184,7 @@ export default function Home() {
                   marginBottom: '40px',
                 }}
               >
-                Premium tailoring for <strong style={{ color: 'var(--cream)' }}>school uniforms</strong>, restaurant staff, petrol pump crews, party wear & bulk institutional orders. Delivered on time, every time.
+                Premium tailoring for <strong style={{ color: 'var(--cream)' }}>school uniforms</strong>, restaurant staff, petrol pump crews, party wear & bulk institutional orders across Dubai, Sharjah, Ras al Khaimah, Fujairah & the whole UAE. Delivered on time, every time.
               </motion.p>
 
               <motion.div

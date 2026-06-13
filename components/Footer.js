@@ -149,6 +149,7 @@ export default function Footer() {
             </div>
             {[
               { icon: '📍', text: 'Shop #2, Behind Al Madina Supermarket, Butena, Sharjah' },
+              { 'icon': '☎️', 'text' : '+971-66780474'},
               { icon: '📞', text: '+971-544779138, +971-556855434' },
               { icon: '✉️', text: 'info@daralnujom.shop' },
               { icon: '⏰', text: 'Mon–Sat: 9AM – 9PM' },
@@ -178,8 +179,16 @@ export default function Footer() {
                         <a href="mailto:abdul.aslam@daralnujom.shop" style={{ color: 'inherit', textDecoration: 'none' }}> abdul.aslam@daralnujom.shop</a>
                       </span>  
                     </>
-                    : (<span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>)
-                  )}
+
+                    :
+                    (icon == "☎️" ?
+                    <>
+                      <span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>
+                        <a href="tel:+971-66780474" style={{ color: 'inherit', textDecoration: 'none' }}>+971-66780474</a>
+                      </span>
+                    </>
+                     :(<span style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: 1.5 }}>{text}</span>)
+                  ))}
               </div>
             ))}
             <a
